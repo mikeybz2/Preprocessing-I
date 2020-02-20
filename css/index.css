@@ -1,1 +1,195 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	/*margin: %;*/
+/*padding: 2;*/
+/*font-size: 100%;
+	/*font: inherit;*/
+/*vertical-align: baseline;*/
+/* HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}*/
+/* Set every element's box-sizing to border-box */
+@font-face {
+  font-family: 'Coda Caption';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Coda Caption ExtraBold'), local('CodaCaption-ExtraBold'), url(https://fonts.gstatic.com/s/codacaption/v13/ieVm2YRII2GMY7SyXSoDRiQGqcxKwPWb.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v16/FwZY7-Qmy14u9lezJ-6H6Mw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Permanent Marker Regular'), local('PermanentMarker-Regular'), url(https://fonts.gstatic.com/s/permanentmarker/v9/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Ceg.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+  /*border-style: solid;*/
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: salmon;
+  padding-bottom: 5%;
+  border-bottom-style: solid;
+  border-width: thick;
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 48%;
+    width: 100%;
+    padding-bottom: 50%;
+  }
+}
+.header-info {
+  width: 100%;
+  margin-left: 3%;
+}
+.top-header-info {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  width: 95%;
+  padding-bottom: 5%;
+  border-bottom-style: solid;
+  border-width: thick;
+  padding-right: 3%;
+}
+.bottom-header-info {
+  width: 90%;
+  height: 0px;
+  padding-bottom: 10%;
+}
+.bottom-header-info-p {
+  font-family: 'Pacifico', cursive;
+}
+h1 {
+  font-size: 5em;
+  margin: 0%;
+  padding-bottom: 7%;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 4em;
+    text-align: center;
+  }
+}
+h2 {
+  margin-bottom: 0%;
+  font-family: 'Coda Caption', sans-serif;
+}
+h3 {
+  font-size: 1.2em;
+}
+.self-img1 {
+  width: 40%;
+  margin-left: 12%;
+}
+img {
+  width: 80%;
+  margin-top: 10%;
+  border-radius: 50%;
+}
+section {
+  display: flex;
+  margin-top: 0%;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 48%;
+    width: 100%;
+  }
+}
+.box {
+  width: 70%;
+  padding-left: 10%;
+  font-family: 'Permanent Marker', cursive;
+}
+@media (max-width: 500px) {
+  .box {
+    width: 200%;
+    display: flex;
+    flex-direction: column;
+    font-size: 100%;
+  }
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 48%;
+}
+.right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 48%;
+  border-left-style: solid;
+}
+.skills {
+  margin-bottom: 20%;
+}
+.Experience1 {
+  padding-top: 3%;
+}
+.acomplishments {
+  padding-top: 3%;
+}
